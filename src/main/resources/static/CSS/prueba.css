@@ -1,0 +1,30 @@
+.css
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.imagen_LG img{
+    width: 400px;
+    margin-left: 800px;
+}
+.division_imagen_LG{
+    border:  1px solid black;
+    display: inline;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.division_lavanderia_LG h1{
+    margin-right:250px;
+}
+
+.division_imagen_LG h2{
+    margin-right: 10px;
+}
+.division_imagen_LG p{
+    margin-right: 100px;
+    
+
+}

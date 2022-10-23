@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slyder{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slyder ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate ease-out;
+}
+
+.slyder li{
+    width: 100%;
+    list-style: none;
+}
+
+.slyder img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+} 
+
+.contenedor {
+
+    display: flex;
+    width: 98%;
+    height: 25px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    background-color: rgb(152, 152, 152);
+
+    overflow: hidden;
+}
+
+.contenedor p {
+    flex: 50%;
+    text-align: right;
+}
+
+.contenedor2 {
+
+    display: flex;
+    width: 98%;
+    height: 25px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    background-color: rgb(133, 122, 255);
+
+    overflow: hidden;
+}
+
+.contenedor2 p {
+    flex: 50%;
+    text-align: right;
+}
+
+.contenedor ul {
+    flex: 50%;
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 6s infinite;
+    text-align: left;
+}
+
+up,p {      
+    margin: 0;
+}
+
+@keyframes cambiar {
+    0% { margin-top:0;}
+    15% {margin-top:0;}
+
+    20% {margin-top: -25px;}
+    45% {margin-top: -25px;}
+
+    50% {margin-top: -50px;}
+    75% {margin-top: -50px;}
+    
+    80% {margin-top: -25px;}
+    95% {margin-top: -25px;}
+
+    100% {margin-top: 0px;}
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+/*jean aqui arriba modifique con el flex-warp para cuando se achique la pagina*/
+.bar4x4_1 {
+    flex: 5%;
+    width: 190px;
+    height: 170px;
+    
+    background-color: #ffffff;
+
+    display: flex;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bar4x4_2 {
+    flex: 5%;
+    width: 190px;
+    height: 170px;
+    background-color: #ffffff;
+
+    display: flex;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bar4x4_3 {
+    flex: 5%;
+    width: 190px;
+    height: 170px;
+    background-color: #ffffff;
+
+    display: flex;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bar4x4_4 {
+    flex: 5%;
+    width: 190px;
+    height: 170px;
+    background-color: #ffffff;
+
+    display: flex;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contenedor2 ul {
+    flex: 50%;
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 6s infinite;
+    text-align: left;
+}
+
+.favimg1 {
+
+    width: 165px;
+
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.textin1 {
+    height: 170px;
+    width: 145px;
+    font-size: 13px;
+    font-family: Helvetica;
+
+    padding-top: 60px;
+    padding-right: 30px;
+
+}
+
+.favimg2 {
+
+    width: 165px;
+
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.textin2 {
+    height: 170px;
+    width: 145px;
+    font-size: 13px;
+    font-family: Helvetica;
+
+    padding-top: 60px;
+    padding-right: 30px;
+
+}
+
+.favimg3 {
+
+    width: 165px;
+
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.textin3 {
+    height: 170px;
+    width: 145px;
+    font-size: 13px;
+    font-family: Helvetica;
+
+    padding-top: 60px;
+    padding-right: 30px;
+
+}
+
+.favimg4 {
+    
+    width: 165px;
+
+    padding-top: 15px;
+    padding-left: 5px;
+
+}
+
+.textin4 {
+    height: 170px;
+    width: 145px;
+    font-size: 13px;
+    font-family: Helvetica;
+
+    padding-top: 60px;
+    padding-right: 30px;
+
+}
+
+
+.Contenedor_Empresas {
+
+    margin-top: 5px;
+
+    background-image: url(/IMAGEN/fondo_empresas.jpg);
+    background-size: cover;
+    border: 5px solid #0000;
+    
+    height: 95%;
+    width: 100%;
+}
+
+.Texto {
+    background-color: #fff;
+    color: #000;
+
+    height: 315px;
+    
+    width: 600px;
+
+    text-align: center;
+
+    margin: auto;
+    
+    margin-top: 8%;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.division1 h2 {
+    padding: auto;
+    padding-top: 5%;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.division2 h1{
+
+    font-family: sans-serif;
+    font-size: 80px ;
+}
+
+.division3{
+
+    font-family: sans-serif;
+    font-size: 15px;
+
+    padding: auto;    
+}
+
+  /*secion de productos*/
+
+#tabladecap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#tb_cap{
+      display: flex;
+      flex-wrap: wrap;
+      border-style: solid;
+      border-width: 2px;
+      border-color: black;
+      width: 300px;
+      height: min-content;
+      margin: auto;
+      padding-left: 5px;
+}
+
+
+#domicilio{
+    border: 5px solid green;
+    display: flex;
+    width: 95%;
+    height: min-content;
+    
+}
+
+#retiro{
+    border: 5px solid red;
+    display: flex;
+    width: 95%;
+    height: min-content;
+    
+}
+#stock{
+    border: 5px solid red;
+    display: flex;
+    width: 95%;
+    height: min-content;
+    
+}
+#tr_cond{
+    display: inline;
+    margin:auto;
+}
+#tr_cond > a{
+    color: red;
+    
+}
+
+/*aqui esta el css del espacio de los anunciós */
+.S-A{
+    display: block;
+    margin-top: 10px;
+}
+.prueba{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.laundry{
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+    padding-left: 10px;
+    text-align: justify;
+}
+.pag{
+    width: 150px;
+    height: 185px;
+    
+}
+
+.laundry > img{
+    max-width: 100%;
+    height: auto;
+}
