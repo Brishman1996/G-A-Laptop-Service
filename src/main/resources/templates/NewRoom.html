@@ -19,30 +19,33 @@
 <body>
 	<h1 th:if="${mensaje!='OK'}">Error al Recuperar el ID</h1>
 	<div style="padding:100px" >
-	<form th:action=@{/views/modificar} method="post" th:object="${Room}">
+	<form th:action="@{/views/guardar}" method="post" th:object="${Room}">
 		<fieldset>
-			<legend>Datos de la Habitacion</legend>
+			<legend>Nueva Habitacion</legend>
 			<div class="mb-3">
-				<label for="disabledTextInput" class="form-label">ID de la Habitacion</label> 
-				<input type="text" id="IDCuarto"
-					class="form-control" placeholder="Disabled input" th:field="*{id}">
+				<label for="Id" class="form-label">ID de la Habitacion</label> 
+				<input type="text" id="Id" 
+					class="form-control" placeholder="Ingrese el ID">
 			</div>
 			<div class="mb-3">
-				<label for="disabledSelect" class="form-label">Nombre</label>
-				 <input type="text" class="form-control" id="numHabitacion"
-				 th:field="*{name}">
+				<label for="name" class="form-label">Nombre</label>
+				 <input class="form-control" type="text"  id="name"
+				 th:field="*{name}"
+				 placeholder="Ingrese Nombre">
 			</div>
 			<div class="mb-3">
-				<label for="disabledSelect" class="form-label">Numero</label>
-				<input type="text" id="nomHabitacion"
-					class="form-control" placeholder="input" th:field="*{roomNumber}">
+				<label for="roomNumber" class="form-label">Numero</label>
+				<input type="text" id="roomNumber"
+				th:field="*{roomNumber}"
+					class="form-control" placeholder="Ingrese el número">
 			</div>
 			<div class="mb-3">
-				<label for="disabledSelect" class="form-label">Informacion</label>
-				<input type="text" id="nomHabitacion"
-					class="form-control"  th:field="*{bedInfo}">
+				<label for="bedInfo" class="form-label">Informacion</label>
+				<input type="text" id="bedInfo"
+					th:field="*{bedInfo}"
+					class="form-control"  placeholder="Ingese informacion de la Cama">
 			</div>
-			<button type="submit" class="btn btn-secondary">Grabar</button>
+			<input type="submit" class="btn btn-primary" value="Grabar"/>
 		</fieldset>
 	</form>
 	</div>
