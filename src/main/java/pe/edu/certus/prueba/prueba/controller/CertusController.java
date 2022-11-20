@@ -12,18 +12,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import pe.edu.certus.prueba.prueba.data.*;
 import pe.edu.certus.prueba.prueba.entity.RoomData;
+import pe.edu.certus.prueba.prueba.services.RoomServices;
 
 
 @Controller
 public class CertusController {
 	@Autowired
-	private RoomRepository roomRepository;
+	private RoomServices roomServices;
 
 	@GetMapping("/views/rooms")
 	public String Saludar(@RequestParam(name = "id", required = false, defaultValue = "1") Long id, Model model) {
 
-		Optional<Room> r = this.roomRepository.findById(id);
 		RoomData bean = new RoomData();
+		Optional<Room> r = roomServices.obtenerRoom(id);
 
 		if (!r.isEmpty()) {
 			bean.setId( r.get().getId() );
@@ -63,7 +64,7 @@ public class CertusController {
 		r.setName(room.getName());
 		r.setRoomNumber(room.getRoomNumber());
 		//Guardo el objeto creado
-		roomRepository.save(r);
+		roomServices.guardarRoom(r);
 		return "redirect:/views/rooms";
 	}
 	
@@ -78,7 +79,7 @@ public class CertusController {
 		r.setRoomNumber(room.getRoomNumber());
 		r.setId(room.getId());
 		//Guardo el objeto creado
-		roomRepository.save(r);
+		roomServices.guardarRoom(r);
 		return "redirect:/views/rooms?id=" + r.getId();
 	}
 	
