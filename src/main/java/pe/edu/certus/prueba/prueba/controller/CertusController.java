@@ -2,6 +2,7 @@ package pe.edu.certus.prueba.prueba.controller;
 
 import java.util.Optional;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import pe.edu.certus.prueba.prueba.data.*;
+import pe.edu.certus.prueba.prueba.entity.*;
 import pe.edu.certus.prueba.prueba.entity.RoomData;
 import pe.edu.certus.prueba.prueba.services.RoomServices;
 
@@ -85,5 +87,11 @@ public class CertusController {
 		roomServices.guardarRoom(r);
 		return "redirect:/views/rooms?id=" + r.getId();
 	}
+	@PostMapping("/acces-user")
+	public String InicioUsuario(@ModelAttribute User user){
+		User u = new User();
+		u
+	}
 	
 }
+ 
