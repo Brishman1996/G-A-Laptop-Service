@@ -27,6 +27,7 @@ public class CertusController {
 		Optional<Room> r = roomServices.obtenerRoom(id);
 
 		if (!r.isEmpty()) {
+			//Los gets no son errores
 			bean.setId( r.get().getId() );
 			bean.setName(r.get().getName());
 			bean.setBedInfo(r.get().getBedInfo());
@@ -60,6 +61,7 @@ public class CertusController {
 		//Creo el objeto a almacenar
 		Room r = new Room();
 		//Seteo los objetos
+		//Los gets no son errores
 		r.setBedInfo(room.getBedInfo());
 		r.setName(room.getName());
 		r.setRoomNumber(room.getRoomNumber());
@@ -74,6 +76,7 @@ public class CertusController {
 		//Creo el objeto a almacenar
 		Room r = new Room();
 		//Seteo los objetos
+		//Los gets no son errores
 		r.setBedInfo(room.getBedInfo());
 		r.setName(room.getName());
 		r.setRoomNumber(room.getRoomNumber());
