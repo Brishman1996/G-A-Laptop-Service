@@ -1,9 +1,6 @@
 package pe.edu.certus.prueba.prueba.entity;
 
-import lombok.Data;
-
-@Data
-public class User {
+public class UserData {
 	private long id;
 	private String nombre;
 	private String usuario;
